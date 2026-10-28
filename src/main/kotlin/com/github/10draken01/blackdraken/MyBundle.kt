@@ -1,4 +1,4 @@
-package org.jetbrains.plugins.template
+package com.github.10draken01.blackdraken
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls
