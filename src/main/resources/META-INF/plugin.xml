@@ -1,19 +1,26 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.10draken01.blackdraken</id>
-    <name>black-draken</name>
-    <vendor>10draken01</vendor>
+    <id>com.draken.blackdraken</id>
+    <name>Black Draken</name>
+    <vendor email="leonardofavion@gmail.com" url="https://github.com/10Draken01">Draken</vendor>
+
     <description><![CDATA[
-        <p><b>black-draken</b> is a repository that provides a pure template to make it easier to create a new plugin project.</p>
-        <p>The main goal of this template is to speed up the setup phase of plugin development for both new and experienced developers by preconfiguring the project scaffold and CI, linking to the proper documentation pages, and keeping everything organized.</p>
+        <p><b>Black Draken</b> is a dark neon theme with a demonic black and neon red palette.</p>
+        <p>Includes an optional editor background image with glitch effects, and lightweight red particles while you type. All effects can be toggled in Settings | Appearance | Black Draken.</p>
     ]]></description>
+
+    <change-notes><![CDATA[
+        <ul><li>Initial release.</li></ul>
+    ]]></change-notes>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.10draken01.blackdraken.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.10draken01.blackdraken.startup.MyProjectActivity" />
+        <themeProvider id="com.draken.blackdraken.theme" path="/themes/BlackDraken.theme.json"/>
+        <bundledColorScheme id="Black Draken" path="/themes/BlackDraken"/>
+        <editorFactoryListener implementation="com.draken.blackdraken.particles.ParticleEditorListener"/>
+        <applicationConfigurable parentId="appearance"
+                                 instance="com.draken.blackdraken.settings.BlackDrakenConfigurable"
+                                 id="com.draken.blackdraken.settings"
+                                 displayName="Black Draken"/>
     </extensions>
 </idea-plugin>

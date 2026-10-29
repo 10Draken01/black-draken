@@ -9,10 +9,27 @@ plugins {
 dependencies {
     testImplementation("junit:junit:4.13.2")
 
-    // IntelliJ Platform Gradle Plugin Dependencies Extension - read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-dependencies-extension.html
     intellijPlatform {
         intellijIdea("2026.2.3")
         testFramework(TestFrameworkType.Platform)
         testBundledPlugins("com.intellij.modules.ultimate")
+
+        // Necesario para la tarea verifyPlugin
+        pluginVerifier()
+    }
+}
+
+// Fuera de "dependencies": configuración del plugin
+intellijPlatform {
+    signing {
+        certificateChainFile = file("C:/Users/leona/draken-keys/chain.crt")
+        privateKeyFile = file("C:/Users/leona/draken-keys/private_encrypted.pem")
+        password = providers.environmentVariable("PRIVATE_KEY_PASSWORD")
+    }
+
+    pluginVerification {
+        ides {
+            recommended()
+        }
     }
 }

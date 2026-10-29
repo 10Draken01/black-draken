@@ -1,0 +1,204 @@
+{
+  "name": "Black Draken",
+  "dark": true,
+  "author": "Draken",
+  "editorScheme": "Black Draken",
+
+  "colors": {
+    "black": "#000000",
+    "blackSoft": "#050505",
+    "panel": "#080808",
+    "panelSoft": "#0D0D0F",
+    "raised": "#121216",
+
+    "border": "#24242A",
+    "borderRed": "#4A0B18",
+
+    "foreground": "#F2F2F5",
+    "foregroundSoft": "#D0D0D6",
+    "muted": "#777783",
+    "disabled": "#4B4B55",
+
+    "red": "#FF1744",
+    "redBright": "#FF335C",
+    "redSoft": "#FF5252",
+    "redLight": "#FF8096",
+
+    "crimson": "#C11235",
+    "wine": "#7A1025",
+    "deepRed": "#3D0813",
+
+    "selection": "#420B18",
+    "selectionSoft": "#26070E",
+    "hover": "#18070B",
+    "hoverRed": "#2A0710"
+  },
+
+  "ui": {
+    "*": {
+      "background": "panel",
+      "foreground": "foreground",
+      "borderColor": "border",
+      "separatorColor": "border",
+      "selectionBackground": "selection",
+      "selectionForeground": "foreground",
+      "selectionInactiveBackground": "selectionSoft",
+      "focusColor": "red",
+      "disabledForeground": "disabled"
+    },
+
+    "Panel": {
+      "background": "panel"
+    },
+
+    "Component": {
+      "focusColor": "red",
+      "focusedBorderColor": "red"
+    },
+
+    "TextField": {
+      "background": "black",
+      "foreground": "foreground",
+      "caretForeground": "red",
+      "selectionBackground": "selection",
+      "selectionForeground": "foreground"
+    },
+
+    "PasswordField": {
+      "background": "black",
+      "foreground": "foreground",
+      "caretForeground": "red"
+    },
+
+    "ComboBox": {
+      "background": "black",
+      "foreground": "foreground",
+      "nonEditableBackground": "raised"
+    },
+
+    "Spinner": {
+      "background": "black",
+      "foreground": "foreground"
+    },
+
+    "Button": {
+      "startBackground": "raised",
+      "endBackground": "raised",
+      "startBorderColor": "border",
+      "endBorderColor": "border",
+      "focusedBorderColor": "red",
+      "foreground": "foreground",
+
+      "default": {
+        "startBackground": "red",
+        "endBackground": "crimson",
+        "startBorderColor": "red",
+        "endBorderColor": "red",
+        "foreground": "#FFFFFF",
+        "focusedBorderColor": "redBright"
+      }
+    },
+
+    "ActionButton": {
+      "hoverBackground": "hover",
+      "pressedBackground": "selection",
+      "hoverBorderColor": "crimson"
+    },
+
+    "Link": {
+      "activeForeground": "red",
+      "hoverForeground": "redBright",
+      "pressedForeground": "crimson",
+      "visitedForeground": "wine"
+    },
+
+    "EditorTabs": {
+      "background": "black",
+      "foreground": "foreground",
+      "underlineColor": "red",
+      "inactiveUnderlineColor": "wine",
+      "underlinedTabBackground": "black",
+      "underlineHeight": 2,
+      "hoverColor": "hover"
+    },
+
+    "TabbedPane": {
+      "underlineColor": "red",
+      "hoverColor": "hover",
+      "focusColor": "selection"
+    },
+
+    "ToolWindow": {
+      "background": "panel",
+
+      "Button": {
+        "background": "panel",
+        "hoverBackground": "hover",
+        "selectedBackground": "selection"
+      },
+
+      "HeaderTab": {
+        "background": "panel",
+        "underlineColor": "red",
+        "hoverBackground": "hover"
+      }
+    },
+
+    "TitlePane": {
+      "background": "black",
+      "inactiveBackground": "black"
+    },
+
+    "StatusBar": {
+      "background": "black",
+      "foreground": "foreground",
+      "borderColor": "border"
+    },
+
+    "Tree": {
+      "background": "black",
+      "foreground": "foreground",
+      "hash": "border",
+      "selectionBackground": "selection",
+      "selectionInactiveBackground": "selectionSoft"
+    },
+
+    "List": {
+      "background": "black",
+      "foreground": "foreground",
+      "selectionBackground": "selection",
+      "selectionInactiveBackground": "selectionSoft",
+      "hoverBackground": "hover"
+    },
+
+    "Table": {
+      "background": "black",
+      "foreground": "foreground",
+      "gridColor": "border",
+      "selectionBackground": "selection"
+    },
+
+    "ProgressBar": {
+      "progressColor": "red",
+      "trackColor": "raised",
+      "indeterminateStartColor": "red",
+      "indeterminateEndColor": "crimson"
+    },
+
+    "Popup": {
+      "background": "panel",
+      "borderColor": "crimson"
+    },
+
+    "ToolTip": {
+      "background": "raised",
+      "foreground": "foreground",
+      "infoForeground": "foreground"
+    },
+
+    "ScrollBar": {
+      "background": "black",
+      "thumbColor": "wine"
+    }
+  }
+}
